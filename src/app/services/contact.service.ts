@@ -24,12 +24,28 @@ export class ContactService {
       }  
   }
 
-  changePerson(user: Contact){
-      var d = user.id;
-      for(let i:number; i<contacts.length; i++){
+  changePerson(user: Contact): Contact{
+    var d = user.id;
+    console.log('h1111eeeey')
+    console.log(d);
+    for(let i:number; i<contacts.length; i++){
         if(contacts[i].id == d){
-            contacts[i] = user;     
+            console.log('heeeey')
+            contacts[i].name = user.name;
+            contacts[i].email = user.email;
+            contacts[i].organisation = user.organisation;
+            contacts[i].avatar = user.avatar;
+            return contacts[i];     
         }
     }  
   }
+
+  deletePerson(user: Contact){
+    var d = user.id;
+    for(let i:number; i<contacts.length; i++){
+      if(contacts[i].id == d){
+          contacts[i] = null;
+      }
+  }  
+}
 }

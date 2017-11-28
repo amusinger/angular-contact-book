@@ -28,7 +28,9 @@ export class ContactComponent implements OnInit {
      }
 
      changePerson(user){
-      this.contactService.changePerson(user);
+       user.id = this.profile.id;
+      this.profile = this.contactService.changePerson(user);
+      console.log(this.profile);
      }
 
 

@@ -5,19 +5,19 @@
         <div class="row columns">
    
             <mat-form-field class="example-full-width">
-                <input matInput placeholder="profile.name" formControlName="name">
+              <input matInput value="{{profile.name}}" placeholder="Name" formControlName="name">
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="profile.phone" formControlName="phone">
+              <input matInput value="{{profile.phone}}" placeholder="Phone" formControlName="phone">
           </mat-form-field>
 
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="profile.email" formControlName="email">
+            <input matInput value="{{profile.email}}" placeholder="Email" formControlName="email">
         </mat-form-field>
        
         <mat-form-field class="example-full-width">
-          <input matInput placeholder="profile.organisation" formControlName="organisation">
+          <input matInput value="{{profile.organisation}}" placeholder="Organisation" formControlName="organisation">
       </mat-form-field>
 
             <input type="submit" class="button expanded" value="Submit Form">
