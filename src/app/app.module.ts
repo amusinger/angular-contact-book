@@ -9,6 +9,7 @@ import { LastComponent } from './last/last.component';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabComponent } from './tab/tab.component';
+import { ContactService } from './services/contact.service';
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import { TabComponent } from './tab/tab.component';
     BrowserAnimationsModule,
     MaterialModule,
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
