@@ -14,4 +14,22 @@ export class ContactService {
   getContacts(): Observable<Contact[]> {
    return of(contacts);
   }
+
+  getPerson(id: string): Contact{
+      var u = Number(id);
+      for(let i of contacts){
+          if(i.id == u){
+              return i;
+          }
+      }  
+  }
+
+  changePerson(user: Contact){
+      var d = user.id;
+      for(let i:number; i<contacts.length; i++){
+        if(contacts[i].id == d){
+            contacts[i] = user;     
+        }
+    }  
+  }
 }

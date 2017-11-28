@@ -1,0 +1,9 @@
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.example-full-width{
+    flex: 1 0 80%;
+    margin: 0 auto;
+}

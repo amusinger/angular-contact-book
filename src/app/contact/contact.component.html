@@ -1,0 +1,29 @@
+<div *ngIf="profile">
+  <div>
+    <form [formGroup]="rForm" (ngSubmit)="changePerson(rForm.value)">
+      <div class="form-container">
+        <div class="row columns">
+   
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="profile.name" formControlName="name">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="profile.phone" formControlName="phone">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="profile.email" formControlName="email">
+        </mat-form-field>
+       
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="profile.organisation" formControlName="organisation">
+      </mat-form-field>
+
+            <input type="submit" class="button expanded" value="Submit Form">
+          </div>
+        </div>
+      </form>
+    </div>
+          
+</div>

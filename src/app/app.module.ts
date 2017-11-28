@@ -10,6 +10,8 @@ import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabComponent } from './tab/tab.component';
 import { ContactService } from './services/contact.service';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { ContactService } from './services/contact.service';
     AppComponent,
     ContactsComponent,
     LastComponent,
-    TabComponent
+    TabComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,8 @@ import { ContactService } from './services/contact.service';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ContactService],
   bootstrap: [AppComponent]
