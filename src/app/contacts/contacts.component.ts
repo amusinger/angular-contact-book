@@ -19,5 +19,5 @@ export class ContactsComponent implements OnInit {
   getContacts(){
     this.contactService.getContacts().subscribe(data => this.contacts = data);
   }
-
+  
 }

@@ -18,20 +18,10 @@ export class ContactComponent implements OnInit {
   
   constructor(private route: ActivatedRoute,
     private contactService: ContactService, private fb: FormBuilder) {
-      this.rForm = fb.group({
-        'name' : [null, Validators.required],
-        'phone' : [null, Validators.required],
-        'email' : [null],
-        'organisation' : [null],
-        'avatar' : [null]  
-      });
+      
      }
 
-     changePerson(user){
-       user.id = this.profile.id;
-      this.profile = this.contactService.changePerson(user);
-      console.log(this.profile);
-     }
+  
 
 
 
@@ -41,12 +31,35 @@ ngOnInit() {
     this.id = params['id']; 
     console.log(this.id);
     this.profile = this.contactService.getPerson(this.id as string)
-      
+    this.rForm = this.fb.group({
+      'name' : [this.profile.name, Validators.required],
+      'phone' : [this.profile.phone, Validators.required],
+      'email' : [this.profile.email],
+      'organisation' : [this.profile.organisation],
+      'avatar' : [this.profile.avatar]  
+    });
     
  });
 }
 ngOnDestroy() {
   this.sub.unsubscribe();
 }
+
+changePerson(user){
+  user.id = this.profile.id;
+ this.profile = this.contactService.changePerson(user);
+ console.log('changed');
+ console.log(this.profile);
+}
+
+deleteContact(user){
+ this.contactService.deletePerson(user);
+}
+
+
+callPerson(user){
+  this.contactService.callPerson(user);
+ }
+
 
 }

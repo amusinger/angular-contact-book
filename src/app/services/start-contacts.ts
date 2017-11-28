@@ -3,14 +3,14 @@ import { Contact } from "./contact";
 
 
 export const contacts: Contact[] = [
-  { id: 1, name: 'Mr. Nice',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: ''},
-  { id: 2, name: 'Narco',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
-  { id: 3, name: 'Bombasto',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
-  { id: 4, name: 'Celeritas',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
-  { id: 5, name: 'Magneta',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
-  { id: 6, name: 'RubberMan',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
-  { id: 7, name: 'Dynama',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
-  { id: 8, name: 'Dr IQ',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
-  { id: 9, name: 'Magma',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
-  { id: 10, name: 'Tornado',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' }
+  { id: 1, name: 'Person1',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: ''},
+  { id: 2, name: 'Person2',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
+  { id: 3, name: 'Person3',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
+//   { id: 4, name: 'Person4',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
+//   { id: 5, name: 'Person5',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
+//   { id: 6, name: 'Person6',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
+//   { id: 7, name: 'Person7',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
+//   { id: 8, name: 'Person8',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
+//   { id: 9, name: 'Person9',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' },
+//   { id: 10, name: 'Person10',  phone: '+7812371293791', email:'test@test', organisation: '', avatar: '' }
 ];

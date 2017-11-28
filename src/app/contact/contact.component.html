@@ -21,9 +21,13 @@
       </mat-form-field>
 
             <input type="submit" class="button expanded" value="Submit Form">
+            <button (click)="deleteContact(rForm.value)" [routerLink]="['/']">Delete contact</button>
           </div>
         </div>
       </form>
     </div>
-          
+    <button mat-fab [routerLink]="['/']"><mat-icon>arrow_back</mat-icon>  </button>    
+    
+    <button mat-fab (click) = "callPerson(profile)"><mat-icon>call</mat-icon>  </button>    
+
 </div>

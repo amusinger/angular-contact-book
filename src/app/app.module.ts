@@ -12,6 +12,7 @@ import { TabComponent } from './tab/tab.component';
 import { ContactService } from './services/contact.service';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddContactComponent } from './add-contact/add-contact.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactsComponent,
     LastComponent,
     TabComponent,
-    ContactComponent
+    ContactComponent,
+    AddContactComponent
   ],
   imports: [
     BrowserModule,
